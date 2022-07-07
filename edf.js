@@ -81,12 +81,12 @@ class EDF
 		
 		for (var i = 0; i<n; i++)
 		{
-			this.channels[i].phys_min = parseInt(arrayToAscii(buf, pos, 8)); pos += 8;
+			this.channels[i].phys_min = parseFloat(arrayToAscii(buf, pos, 8)); pos += 8;
 		}
 		
 		for (var i = 0; i<n; i++)
 		{
-			this.channels[i].phys_max = parseInt(arrayToAscii(buf, pos, 8)); pos += 8;
+			this.channels[i].phys_max = parseFloat(arrayToAscii(buf, pos, 8)); pos += 8;
 		}
 		
 		for (var i = 0; i<n; i++)
